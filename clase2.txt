@@ -1,0 +1,94 @@
+Vectores: secuencia de numeros o lo que sea.
+<vector> int v;
+<vector> double v;
+<vector> string v; // v = ["p","e","p","e"]. v[0] = p
+
+Leer los numeros.
+for(i=0; i<n; i++){
+    cin>>v[i];
+}
+
+Agregar elemento al final.
+v.push_back();
+
+Sacar elemento del final.
+v.pop_back();
+
+Ordena: O(n log n)
+sort(v.begin(), v.end()); //Es como puntero que te dice de donde tiene que empezar y donde terminar.
+
+Ordena decreciente. O sea, x < y.
+Deberiamos pasarle una funcion propia.
+
+typedef unsigned long long ll;
+bool cmp(ll a, ll b){
+    return abs(a) < abs(b);
+}
+
+ENTONCES AGREGA: sort(v.begin(), v.end(), cmp);
+
+ll tam = v.size();
+
+for(ll& x : v){
+    cout << x << ' ';
+}
+
+
+
+
+CHARS:
+
+#include <bits/stdc++.h>
+
+using namespace std;
+typedef unsigned long long ll;
+
+int main(){
+    ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+
+    char c;
+    cin >> c;
+
+    c++;
+}
+
+int main..{
+    cout << (int c) << '\n';
+}
+A 
+65
+
+
+c = toupper(c); // Convierte a mayus
+c = tolower(c);
+
+
+STRINGS:
+
+string a, t;
+cin >> s >> t;
+
+if(s<t){
+
+}
+
+ORDEN LEXICOGRAFICO: va viendo caracter por caracter. Si 
+a a b c 
+a a c a 
+
+
+tolower a los strings..
+
+for(char c& : s){
+    c = tolower(c);
+}
+
+
+pair<ll, vector<ll>> p; Par que tiene un ll y un vector :O
+
+pair< ll, ll > p; par de numeros ll
+ 
+
+COMPILACION:
+
+g++ -Wall -std=c++17 archivo.cpp -o archivo.exe
